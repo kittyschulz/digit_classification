@@ -4,9 +4,7 @@
 
 Detecting and classifying digits from natural images is an important task in computer vision. It makes it possible to extract meaningful data from images, and has applications such as identifying license plates for automated tolling or reading serial numbers on scientific samples to help maintain chain-of-custody. In the future, this task may also become important for autonomous vehicles to obtain information from their environment, such as speed limits or highway signs. 
 
-This problem has a long history, starting with classification of handwritten digits with MNSIT \cite{mnist}. With modern deep learning approaches, ...
-
-In this case, we adopt a two stage pipeline where we first propose regions which are likely to contain digits using the feature extractor Maximally Stable Extremal Regions (MSER). Then we train a convolutional neural network (CNN) to classify each region proposal as either a digit from 0 to 9 or background.
+We adopt a two stage pipeline where we first propose regions which are likely to contain digits using the feature extractor Maximally Stable Extremal Regions (MSER). Then we train a convolutional neural network (CNN) to classify each region proposal as either a digit from 0 to 9 or background.
 
 ## Requirements
 
