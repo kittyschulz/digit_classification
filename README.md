@@ -10,15 +10,6 @@ Read the [full write-up here](https://drive.google.com/file/d/15p9nqY72T4ghOvcmj
 
 ## Requirements
 
-The pipeline requires the following libraries to run:
-
-os
-cv2
-numpy
-torch
-torchvision
-matplotlib
-
 To run the demo in `run.py`, some files are also required to be saved in the local directory:
 * A directory, `./weights` containing three files for model weights: `vgg.pth`, `vgg_imagenet.pth`, and `cnn.pth`. The weights can be downloaded from Gatech Box [here](https://gatech.box.com/s/4hpnvcb1uwjc6tpw4395x8543jgsej0x).
 * A directory containing `./example_images` containing example images. The example images can be downloaded from GatechBox [here](https://gatech.box.com/s/24xvjqw8zuitltwesu1z5vttmf6c5l2e).
