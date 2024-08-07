@@ -6,13 +6,14 @@ Detecting and classifying digits from natural images is an important task in com
 
 We adopt a two stage pipeline where we first propose regions which are likely to contain digits using the feature extractor Maximally Stable Extremal Regions (MSER). Then we train a convolutional neural network (CNN) to classify each region proposal as either a digit from 0 to 9 or background.
 
-Read the [full write-up here](https://drive.google.com/file/d/15p9nqY72T4ghOvcmj4kNbOYogzQ3MVLt/view?usp=sharing).
+Read the [full paper here](https://drive.google.com/file/d/1wib-W4qYPEPuKMGKR4qbDzmOejaKc3ek/view?usp=sharing
+).
 
 ## Requirements
 
 To run the demo in `run.py`, some files are also required to be saved in the local directory:
-* A directory, `./weights` containing three files for model weights: `vgg.pth`, `vgg_imagenet.pth`, and `cnn.pth`. The weights can be downloaded from Gatech Box [here](https://gatech.box.com/s/4hpnvcb1uwjc6tpw4395x8543jgsej0x).
-* A directory containing `./example_images` containing example images. The example images can be downloaded from GatechBox [here](https://gatech.box.com/s/24xvjqw8zuitltwesu1z5vttmf6c5l2e).
+* A directory, `./weights` containing three files for model weights: `vgg.pth`, `vgg_imagenet.pth`, and `cnn.pth`. The weights can be downloaded from [here](https://drive.google.com/drive/folders/1Ksu305t5UmAZeZXJi8dokOfsPn4tDyyE?usp=drive_link).
+* A directory containing `./example_images` containing example images. The example images can be downloaded [here](https://drive.google.com/drive/folders/1XpeE-5ZiBRQjvNS4MvH9esSR9LPP6Sp_?usp=sharing).
 
 ## Demos
 
@@ -28,6 +29,6 @@ A demo of the pipeline can be run on the five example images by executing the fi
 $ python3 build_model.py
 ```
 
-The demo will read five images from the directory `./example_images` and save the outputs to the directory `./graded_images`. If the images do not exist in the `./example_images` directory, they can be downloaded from GatechBox [here](https://gatech.box.com/s/24xvjqw8zuitltwesu1z5vttmf6c5l2e).
+The demo will read five images from the directory `./example_images` and save the outputs to the directory `./graded_images`. If the images do not exist in the `./example_images` directory, they can be downloaded [here](https://drive.google.com/drive/folders/1XpeE-5ZiBRQjvNS4MvH9esSR9LPP6Sp_?usp=sharing).
 
-The pipeline will load the model weights for VGG16 pretrained with Imagenet and fine tuned on SVHN and DTD. These model weights should be located in the directory `./weights`. If this directory or the `*.pth` files do not exist, the weights can be downloaded from Gatech Box [here](https://gatech.box.com/s/4hpnvcb1uwjc6tpw4395x8543jgsej0x).
+The pipeline will load the model weights for VGG16 pretrained with Imagenet and fine tuned on SVHN and DTD. These model weights should be located in the directory `./weights`. If this directory or the `*.pth` files do not exist, the weights can be downloaded [here](https://drive.google.com/drive/folders/1Ksu305t5UmAZeZXJi8dokOfsPn4tDyyE?usp=drive_link).
